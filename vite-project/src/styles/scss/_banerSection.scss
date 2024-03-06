@@ -1,0 +1,54 @@
+.baner_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/src/assets/pexels-alexandr-podvalny-1227513.jpeg);
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+  background-size: 218%;
+  min-height: 40.6em;
+  color: #ffffff;
+}
+
+.baner_section_information {
+  display: flex;
+  flex-direction: column;
+  width: 24em;
+  height: 20em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .baner_container {
+    width: 1024px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .baner_container {
+    width: 768px;
+  }
+
+  .baner_container {
+    min-height: 31.6em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .baner_container {
+    width: 360px;
+  }
+
+  .baner_section_information {
+    width: 20em;
+    height: 29em;
+    justify-content: space-evenly;
+  }
+
+  .baner_container {
+    display: flex;
+    justify-content: center;
+  }
+}

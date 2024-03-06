@@ -1,0 +1,12 @@
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 142px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    row-gap: 133px;
+  }
+}

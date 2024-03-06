@@ -1,0 +1,89 @@
+.postRequest_section {
+  padding-bottom: 60px;
+}
+.postRequest_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 46px;
+}
+
+form {
+  width: 380px;
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.input-file {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.input-file-text {
+  padding: 0 10px;
+  line-height: 40px;
+  text-align: left;
+  height: 51px;
+  display: block;
+  float: right;
+  box-sizing: border-box;
+  width: 292px;
+  border-radius: 0 4px 4px 0;
+  border: 1px solid #ddd;
+}
+
+.input-file-btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 4px 0 0 4px;
+  line-height: 22px;
+  height: 51px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  margin: 0;
+}
+.input-file input[type='file'] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.error {
+  font-size: 12px;
+  color: #cb3d40;
+  margin-left: 16px;
+  height: 15px;
+}
+
+.error_border {
+  border: 1px solid #cb3d40;
+}
+
+.disable {
+  background: #b4b4b4;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 400px) {
+  form {
+    width: 328px;
+  }
+
+  .input-file-text {
+    width: 241px;
+  }
+}

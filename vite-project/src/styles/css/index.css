@@ -1,0 +1,379 @@
+:root {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.6em;
+  font-weight: 400;
+  line-height: 1em;
+  margin: 0;
+}
+
+button {
+  min-width: 100px;
+  height: 34px;
+  border-radius: 80px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: #f4e041;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #ffe302;
+}
+
+ul li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #f8f8f8;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 904px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 704px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    width: 304px;
+  }
+}
+.header {
+  width: 100%;
+  padding: 0.7rem 0;
+  background-color: #ffffff;
+}
+
+.header_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_buttons {
+  width: 13em;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 400px) {
+  .header_container {
+    width: 328px;
+  }
+}
+#root {
+  width: 2560px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  height: 2em;
+  width: 6.5em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 142px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    row-gap: 133px;
+  }
+}
+.baner_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/src/assets/pexels-alexandr-podvalny-1227513.jpeg);
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+  background-size: 218%;
+  min-height: 40.6em;
+  color: #ffffff;
+}
+
+.baner_section_information {
+  display: flex;
+  flex-direction: column;
+  width: 24em;
+  height: 20em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .baner_container {
+    width: 1024px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .baner_container {
+    width: 768px;
+  }
+  .baner_container {
+    min-height: 31.6em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .baner_container {
+    width: 360px;
+  }
+  .baner_section_information {
+    width: 20em;
+    height: 29em;
+    justify-content: space-evenly;
+  }
+  .baner_container {
+    display: flex;
+    justify-content: center;
+  }
+}
+.user_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  width: 333px;
+  height: 212px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.user_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.user_photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.getRequest_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  row-gap: 38px;
+}
+
+@media screen and (max-width: 1280px) {
+  .user_list {
+    gap: 25px;
+  }
+  .user_item {
+    width: 242px;
+    height: 214px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .user_list {
+    gap: 16px;
+  }
+  .user_item {
+    width: 304px;
+    height: 214px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .user_list {
+    gap: 19px;
+  }
+  .user_item {
+    width: 288px;
+    height: 214px;
+  }
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #00bdd3;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #00bdd3 transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.postRequest_section {
+  padding-bottom: 60px;
+}
+
+.postRequest_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 46px;
+}
+
+form {
+  width: 380px;
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.input-file {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.input-file-text {
+  padding: 0 10px;
+  line-height: 40px;
+  text-align: left;
+  height: 51px;
+  display: block;
+  float: right;
+  box-sizing: border-box;
+  width: 292px;
+  border-radius: 0 4px 4px 0;
+  border: 1px solid #ddd;
+}
+
+.input-file-btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 4px 0 0 4px;
+  line-height: 22px;
+  height: 51px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  margin: 0;
+}
+
+.input-file input[type=file] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.error {
+  font-size: 12px;
+  color: #cb3d40;
+  margin-left: 16px;
+  height: 15px;
+}
+
+.error_border {
+  border: 1px solid #cb3d40;
+}
+
+.disable {
+  background: #b4b4b4;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 400px) {
+  form {
+    width: 328px;
+  }
+  .input-file-text {
+    width: 241px;
+  }
+}
